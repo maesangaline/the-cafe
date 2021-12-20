@@ -1,0 +1,314 @@
+/* CPT 203 Web Project */
+
+/* Universal Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #EAEAEA;
+}
+
+/* Header */
+
+h1 {
+	display: block;
+	margin-top: 50px;
+	padding: 30px;
+	color: #001B2E;
+	font-family: 'Merriweather', serif;
+	font-size: 3em;
+	text-align: center;
+}
+
+h2 {
+	display: block;
+	margin-top: 50px;
+	color: #AF3E4D;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+
+h3 {
+    display: block;
+    color: #001B2E;
+    font-family: 'Merriweather', serif;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	color: #294C60;
+    text-align: center;
+}
+
+.logo {
+	display: float;
+	width: 30px;
+	height: 30px;
+	padding: 0px;
+}
+
+header {
+	color: #001B2E;
+	font-family: 'Merriweather', serif;
+}
+
+/* Navigation within div .wrapper */
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+    list-style: none;
+}
+	
+.wrapper li {
+    float: left;
+    padding: 0px 25px;
+}
+
+.wrapper li ul {
+	 display: none;
+}
+
+.wrapper ul li a {
+    display: block;
+    text-decoration: none;
+    color: #A97C73;
+    padding: 5px 15px 5px 15px;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+
+.wrapper li:hover {
+    background-color: #fefefe;
+    box-shadow: 5px 5px 2px #D8DDDE;
+}
+
+.wrapper li:hover ul  {
+    display: block;
+    position: absolute;
+    background-color: #fefefe;
+}
+
+.wrapper li:hover li {
+	display: flex;
+	width: 250px;
+	margin: -5px;
+	padding: 5px;
+	float: none;
+    font-size: 20px;
+}
+	
+
+/* Main / Article */
+main {
+	background: #EAEAEA;
+	color: #666666;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Email Signup form*/
+
+.email form {
+	font-family: 'Roboto', sans-serif;
+	background-color: #fefefe;
+	margin: auto auto auto auto;
+	padding: 10px 10px 10px 10px;
+	border: 1px solid #888;
+	width: 25%;
+}
+
+.email input[type=text], .email input[type=email], .email input[type=password] {
+	font-family: 'Roboto', sans-serif;
+	width: 50%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+.email input[type=text]:focus, .email input[type=email]:focus, .email input[type=password]:focus {
+	font-family: 'Roboto', sans-serif;
+	background-color: #ddd;
+	outline: none;
+}
+
+.email input[type=submit] {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	background-color: #A97C73;
+	color: white;
+	font-size: 20px;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.email input[type=submit]:hover {
+	background-color: #Af3E4D
+}
+
+hr {
+	border: 1px solid #A97C73;
+	margin-bottom: 25px;
+	width: 50%;
+}
+
+/* Menu Pages */
+table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	font-family: 'Roboto', sans-serif;
+}
+
+td {
+	padding: 10px;
+}
+
+/* Gallery */
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.gallery-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.gallery-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #;
+	color: #;
+	font-family: 'Roboto', sans-serif;
+	font-size: .75em;
+}
+
+.email {
+	text-decoration: none;
+	color: #A97C73;
+}
+
+.footerimg {
+	width: 100px;
+	height: 100px;
+	padding: 0px;
+}
+
+/* Commerce Page */
+
+section.commerce {
+	float: left;
+	width: 30%;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.commerce {
+	margin: 1em;
+    width: 30%;
+	background-color: #F4F4F4;
+}
+
+.commerce img {
+	float: right;
+	padding: 1em;
+}
+
+.commerce form {
+    clear: both;
+	font-family: 'Roboto', sans-serif;
+	margin: auto auto auto auto;
+	padding: 10px 10px 10px 10px;
+	width: 25%;
+}
+
+.commerce input[type=submit] {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	background-color: #A97C73;
+	color: white;
+	font-size: 14px;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.commerce input[type=submit]:hover {
+	background-color: #Af3E4D
+}
+
+/* Responsive Design*/
+
+		/* Responsive Form */
+	@media (max-width: 1026px) {	
+		form {
+			width: 50%;
+			display: grid;
+		}
+    }
+
+	@media (max-width: 1026px) {
+		input[type=text], input[type=email], input[type=password] {
+	       font-family: 'Roboto', sans-serif;
+	       width: 90%;
+	       padding: 15px;
+	       border: none;
+	       background: #f1f1f1;
+            }
+        }
+}
+        
+    @media screen and (max-width: 800px) {
+        .galllery-column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+            }
+        }
+
+
+    @media screen and (max-width: 600px) {
+        .gallery-column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+            }
+        }
+
+/* Marcie Sangaline
+sangalinem@my.westmoreland.edu
+CPT203 HTML & CSS
+/*
